@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ameli-backend
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn ameli_web.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: ameli_web.settings
+      - key: PYTHON_VERSION
+        value: 3.12
