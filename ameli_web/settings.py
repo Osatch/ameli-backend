@@ -110,4 +110,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # === Autoriser toutes les origines pour les appels frontend (ex: GitHub Pages) ===
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://Osatch.github.io",
+]
+
