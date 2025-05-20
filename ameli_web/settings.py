@@ -23,7 +23,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'document')
 # === Paramètres de sécurité ===
 SECRET_KEY = 'django-insecure-=-fqn=2)gq@n35c*r#%ttvykv%$7p^lqqa-hz40-v3v(0$qiw_'
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ameli-backend.onrender.com', 'localhost', '127.0.0.1']
+
 
 # === Applications Django + DRF + CORS + app perso ===
 INSTALLED_APPS = [
